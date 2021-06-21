@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <!--Bradley Francis 2021-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Request Info</title>
+</head>
+<body>
+  <nav class="sidenav">
+    <a href="index.html">Home</a>
+    <a href="class.html">Classes</a>
+    <a href="info.html">Request more info</a>
+  </nav>
+  <div class="container">
+    <form method="get" action="thankyou.html">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label for="fname">
+          First Name:
+          <input autofocus type="text" name="fname" id="fname" required placeholder="First Name" />
+        </label>
+        <label for="lname">
+          Last Name:
+          <input type="text" name="lname" id="lname" required placeholder="Last Name" />
+        </label>
+        <label for="email">
+          Email:
+          <input type="email" name="email" id="email" required placeholder="Email" />
+        </label>
+        <label for="phone">
+          Phone number:
+          <input type="number" name="phone" id="phone" placeholder="Phone number">
+        </label>
+      </fieldset>
+      <fieldset class="BestContactInfo">
+        <legend>Contact Preference</legend>
+        <select name="BestContact" id="BestContact">
+          <option value="Email">Email</option>
+          <option value="Phone">Phone</option>
+          <option value="Owl">Owl</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Classes You Want To Take Next Semester</legend>
+        <input type="checkbox" id="CrossTraining" name="CrossTraining" value="CrossTraining">
+        <label for="CrossTraining">Cross Training</label>
+        <input type="checkbox" id="Sprint" name="Sprint" value="Sprint">
+        <label for="Sprint">Sprint</label>
+        <input type="checkbox" id="BodyPump" name="BodyPump" value="BodyPump">
+        <label for="BodyPump">BodyPump</label>
+        <input type="checkbox" id="BodyCombat" name="BodyCombat" value="BodyCombat">
+        <label for="BodyCombat">BodyCombat</label>
+        <input type="checkbox" id="StepInterval" name="StepInterval" value="StepInterval">
+        <label for="StepInterval">Step Interval</label>
+        <input type="checkbox" id="ACT" name="ACT" value="ACT">
+        <label for="ACT">Advanced Cross Training</label>
+        <input type="checkbox" id="MixxedFit" name="MixxedFit" value="MixxedFit">
+        <label for="MixxedFit">MixxedFit</label>
+        <input type="checkbox" id="Zumba" name="Zumba" value="Zumba">
+        <label for="Zumba">Zumba</label>
+      </fieldset>
+      <fieldset>
+        <legend>Preffered time of day for classes</legend>
+        <input type="radio" id="AM" name="ampm" value="AM">
+        <label for="AM">AM</label>
+        <input type="radio" id="PM" name="ampm" value="PM">
+        <label for="PM">PM</label>
+      </fieldset>
+      <fieldset>
+        <legend>Additional info</legend>
+        <textarea class="extraInfo" name="extraInfo" id="extraInfo" cols="60" rows="5" placeholder="Any additional info"></textarea>
+      </fieldset>
+      <input class="submit" type="submit" value="submit" />
+    </form>
+  </div>
+  <footer>Fit for Fun Fitness Club, 2021 Fit Blvd. Mo, 65802 &copy; </footer>
+</body>
+</html>
